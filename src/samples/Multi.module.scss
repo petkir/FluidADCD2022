@@ -1,0 +1,20 @@
+.Multi{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    .Slider{
+       
+        display: flex;
+        justify-content: center;
+        &>div{
+            align-content: center;
+            width: 400px;
+        }
+    }
+    .MultiRandomizer{
+        display: flex;
+        flex-flow: row wrap;
+       justify-content: center;
+       max-width: 80%;
+    }
+}

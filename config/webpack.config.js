@@ -291,6 +291,12 @@ module.exports = function (webpackEnv) {
       ],
     },
     resolve: {
+      fallback: { "fs": false,
+      "url": require.resolve("url/"),
+      "querystring": require.resolve("querystring-es3"),
+      "buffer": require.resolve("buffer")
+     },
+
       // This allows you to set a fallback for where webpack should look for modules.
       // We placed these paths second because we want `node_modules` to "win"
       // if there are any conflicts. This matches Node resolution mechanism.

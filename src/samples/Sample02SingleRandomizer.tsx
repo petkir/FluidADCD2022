@@ -45,12 +45,17 @@ export function Sample02SingelRandomizer() {
             return () => { fluidMap.off("valueChanged", syncView) }
         }
     }, [fluidMap])
-
+    const setNewValue = (value:number) => {
+        if(fluidMap){
+            fluidMap.set(RandomizerValueKey,value);
+        }
+    }
     return (
         <div >
-            {!viewData ?
+            <h2>Sample 2</h2>
+            {viewData=== undefined ?
                 <div /> :
-                <Randomizer value={viewData} onNewNumber={(val) => setViewData(val)} />
+                <Randomizer value={viewData} onNewNumber={(val) => setNewValue(val)} />
             }
         </div>
     );
