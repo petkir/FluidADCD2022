@@ -1,0 +1,14 @@
+@import "@fluentui/react/dist/sass/References";
+
+.Randomizer{
+    height: 15em;
+    width: 15em;
+    @include ms-depth-8;
+    text-align: center;
+    .Value{
+        font-size: 10em;
+    }
+    .Action{
+        text-align: center;
+    }
+}
