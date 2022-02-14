@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { Randomizer } from "../components/Rendomizer";
-import { TinyliciousClient } from "@fluidframework/tinylicious-client";
+
 import { SharedMap } from "fluid-framework";
+import { AzureClient } from "@fluidframework/azure-client";
+import { connectionConfig } from "../config";
 
 
-const client = new TinyliciousClient();
+const client = new AzureClient(connectionConfig);
 
 const containerSchema = {
     initialObjects: { mySingeSampleMap: SharedMap }

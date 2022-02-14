@@ -1,12 +1,13 @@
 import styles from './Multi.module.scss';
 import { useEffect, useRef, useState } from "react";
 import { Randomizer } from "../components/Rendomizer";
-import { TinyliciousClient } from "@fluidframework/tinylicious-client";
 import { IValueChanged, SharedMap } from "fluid-framework";
-import { Slider, values } from "@fluentui/react";
+import { Slider } from "@fluentui/react";
+import { AzureClient } from '@fluidframework/azure-client';
+import { connectionConfig } from '../config';
 
 
-const client = new TinyliciousClient();
+const client = new AzureClient(connectionConfig);
 
 const containerSchema = {
   initialObjects: { myMultiSampleMap: SharedMap }
