@@ -33,32 +33,20 @@ export function Sample02SingelRandomizer() {
     useEffect(() => {
         getSingleRandomizerValue().then((mySingeSampleMap: SharedMap) => setFluidMap(mySingeSampleMap));
     }, []);
-
     const [viewData, setViewData] = useState<number>(0);
     useEffect(() => {
         if (fluidMap !== undefined) {
-            // sync Fluid data into view state
             const syncView = () => setViewData(fluidMap.get(RandomizerValueKey) as number);
-            // ensure sync runs at least once
             syncView();
-            // update state each time our map changes
             fluidMap.on("valueChanged", syncView);
-            // turn off listener when component is unmounted
             return () => { fluidMap.off("valueChanged", syncView) }
         }
     }, [fluidMap])
-    const setNewValue = (value:number) => {
-        if(fluidMap){
-            fluidMap.set(RandomizerValueKey,value);
-        }
-    }
+
     return (
         <div >
             <h2>Sample 2</h2>
-            {viewData=== undefined ?
-                <div /> :
-                <Randomizer value={viewData} onNewNumber={(val) => setNewValue(val)} />
-            }
+                <Randomizer value={viewData} onNewNumber={(val) => fluidMap?.set(RandomizerValueKey,val)} />
         </div>
     );
 }

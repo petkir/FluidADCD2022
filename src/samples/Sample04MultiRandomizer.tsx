@@ -73,15 +73,12 @@ export function Sample04MuliRandomizer() {
       <div className={styles.Multi} >
         <div className={styles.Slider}>
           <h2>Sample 4</h2>
-          {viewData === undefined ? <div /> :
-            <div>
+          <div>
               <Slider value={viewData.length} onChange={(value) => {
-                console.log(value);
                 changeArraySize(value);
               }} />
-            </div>}
+            </div>
         </div>
-        {viewData === undefined ? <div /> :
           <div className={styles.MultiRandomizer}>
             {
               viewData.map((v, i) => {
@@ -89,9 +86,7 @@ export function Sample04MuliRandomizer() {
               })
             }
           </div>
-        }
-
-      </div>
+        </div>
     </div>
   );
 }

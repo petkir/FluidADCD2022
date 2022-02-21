@@ -8,11 +8,11 @@ import { Sample05MuliRandomizer } from './samples/Sample05MultiRandomizer';
 function App() {
   return (
     <div className="App">
-    {/* <Sample01State /> */}
+    {/*<Sample01State /> */ }
      {/* <Sample02SingelRandomizer /> */}
-      {/* <Sample03MultiState />*/ }
+       <Sample03MultiState />
       {/* <Sample04MuliRandomizer /> */}
-      <Sample05MuliRandomizer />
+     {/* <Sample05MuliRandomizer />*/}
     </div>
   );
 }

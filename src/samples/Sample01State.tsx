@@ -7,7 +7,6 @@ export function Sample01State() {
     return (
       <div >
       <Randomizer value={myValue} onNewNumber={(val)=>{
-       
         setValue(val);}
         } />
       </div>
