@@ -1,0 +1,14 @@
+{
+    "task1title": "Awesome Task",
+    "task1description": "Doing the most awesome things",
+    "task1assignedTo": {
+        "name": "Toni Pohl",
+        "email": "toni@adcd2022.com"
+    },
+    "task2title": "Even More Awesome Task",
+    "task2description": "Doing even more awesome things",
+    "task2assignedTo": {
+        "name": "Martina Grom",
+        "email": "martina@adcd2022.com"
+    }
+}

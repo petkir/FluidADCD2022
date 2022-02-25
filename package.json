@@ -6,6 +6,7 @@
     "@babel/core": "^7.16.0",
     "@fluentui/react": "^8.55.1",
     "@fluidframework/azure-client": "^0.56.3",
+    "@fluidframework/sequence": "^0.56.5",
     "@fluidframework/test-client-utils": "^0.56.3",
     "@fluidframework/tinylicious-client": "^0.56.3",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",

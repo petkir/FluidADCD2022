@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
     {/*<Sample01State /> */ }
-     {/* <Sample02SingelRandomizer /> */}
-       <Sample03MultiState />
+      <Sample02SingelRandomizer /> 
+     {/*  <Sample03MultiState />*/}
       {/* <Sample04MuliRandomizer /> */}
      {/* <Sample05MuliRandomizer />*/}
     </div>

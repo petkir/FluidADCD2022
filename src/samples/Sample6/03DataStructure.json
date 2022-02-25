@@ -1,0 +1,21 @@
+{
+    "task1":"handle1",
+    "task2":"handle2"
+}
+
+
+"handle1": {
+    "title": "Awesome Task",
+    "description": "Doing the most awesome things",
+    "assignedTo": {
+        "name": "Toni Pohl",
+        "email": "toni@adcd2022.com"
+    }
+"handle2": {
+        "title": "Even More Awesome Task",
+        "description": "Doing even more awesome things",
+        "assignedTo": {
+            "name": "Martina Grom",
+            "email": "martina@adcd2022.com"
+        }
+    }
